@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 - 송이</title>
+    <!-- css -->
+    <link rel="stylesheet" href="config/css/main.css">
+    <link rel="stylesheet" href="config/css/responsive.css"> 
+    <!-- js -->
+    <script src="config/js/main.js"></script>
+    <script>
+        // About section scroll functions
+        function scrollToProjects() {
+            document.getElementById('projects').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+        
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+    </script>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#about" class="logo">KIM SONG YI / <span>WEB PUBLISHER</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section 1: About -->
+    <section id="about">
+        <div class="back_line">
+            <span class="bk_line_1"></span>
+            <span class="bk_line_2"></span>
+            <span class="bk_line_3"></span>
+            <span class="bk_line_4"></span>
+        </div>
+        <div class="about-container">
+            <!-- 왼쪽 프로필 카드 -->
+            <div class="profile-card">
+                <div class="avatar">
+                    <img src="config/images/song.png" alt="songyi"> 
+                </div>
+                <h2 class="profile-name">SONG YI<br> KIM</h2>
+                <div class="profile-divider"></div>
+                <p class="profile-title">WEB PUBLISHER</p>
+                <div class="social-section">
+                    <span></span>
+                    <div class="social-section-content">
+                        <p class="follow-text">Follow On</p>
+                        <div class="social-icons">
+                            <div class="social-icon instagram">📷</div>
+                            <div class="social-icon facebook">f</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 오른쪽 메인 콘텐츠 -->
+            <div class="main-content">
+                <h1 class="main-title">
+                    HELLO<br> EVERYONE 
+                    <span class="wave-hand" role="img" aria-label="waving hand">👋</span>
+                </h1> 
+                <p class="main-subtitle">Here's Who I am & What I do.</p>
+                
+                <div class="button-group">
+                    <button class="btn-resume" onclick="scrollToContact()">RESUME</button>
+                    <button class="btn-projects" onclick="scrollToProjects()">PROJECTS</button>
+                </div>
+                
+                <div class="description">
+                    <p>저는 웹 퍼블리셔이자 프론트엔드 개발자로, 디자인과 개발을 아우르는 작업을 통해 사용자 친화적인 웹 환경을 구현해왔습니다. HTML, CSS, JavaScript, PHP 등 웹 표준 기술을 능숙하게 다루며, 자사 홈페이지 구축과 콘텐츠 퍼블리싱, 기능 개발을 주요 업무로 담당했습니다. 또한 웹디자인 기능사 자격증을 보유하고 있으며, 다양한 프로젝트에서 랜딩페이지 제작 경험을 쌓아왔습니다. 디자인 감각과 기술적 이해를 함께 살려, 더욱 완성도 높은 결과물을 만드는 것을 강점으로 하고 있습니다.</p>
+                </div>
+            </div>  
+        </div>
+        <div class="about-contact" id="about-contact"> 
+            <p>© 2002 by Keshav Vats.<br> Created with FIGMA.</p>
+            <div style="display: flex; flex-direction: row; align-items: center; text-align: center;gap: 0 2rem;">
+                <p>CALL <br> +82 010 9282 2169</p>
+                <p>EMAIL <br> songyii1031@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Skills -->
+    <section id="skills">
+        <div class="container">
+            <h2>기술 스택</h2>
+            <p class="subtitle">다양한 기술로 멋진 경험을 만들어요 ✨</p>
+            
+            <div class="skills-grid">
+                <!-- React -->
+                <div class="skill-card">
+                    <div class="icon">⚛️</div>
+                    <h3>React</h3>
+                    <p>컴포넌트 기반 UI 개발</p>
+                    <div class="progress-bar"></div>
+                </div>
+
+                <!-- React Native -->
+                <div class="skill-card">
+                    <div class="icon">📱</div>
+                    <h3>React Native</h3>
+                    <p>크로스 플랫폼 모바일 앱</p>
+                    <div class="progress-bar"></div>
+                </div>
+
+                <!-- Node.js -->
+                <div class="skill-card">
+                    <div class="icon">🟢</div>
+                    <h3>Node.js</h3>
+                    <p>서버사이드 JavaScript</p>
+                    <div class="progress-bar"></div>
+                </div>
+
+                <!-- TypeScript -->
+                <div class="skill-card">
+                    <div class="icon">🎨</div>
+                    <h3>TypeScript</h3>
+                    <p>타입 안전한 개발</p>
+                    <div class="progress-bar"></div>
+                </div>
+
+                <!-- Next.js -->
+                <div class="skill-card">
+                    <div class="icon">🎭</div>
+                    <h3>Next.js</h3>
+                    <p>풀스택 React 프레임워크</p>
+                    <div class="progress-bar"></div>
+                </div>
+
+                <!-- Tailwind CSS -->
+                <div class="skill-card">
+                    <div class="icon">🎯</div>
+                    <h3>Tailwind CSS</h3>
+                    <p>효율적인 스타일링</p>
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+
+    <!-- Section 3: Projects -->
+    <section id="projects">
+        <div class="projects-container">
+            <div class="projects-header">
+                <h2>프로젝트</h2>
+                <p class="projects-subtitle">열정과 창의로 만든 작품들을 소개합니다 🚀</p>
+            </div>
+            
+            <!-- 캐러셀 컨테이너 -->
+            <div class="projects-carousel-container">
+            
+                
+                <div class="projects-carousel">
+                    <!-- 프로젝트 1: 업무 관리 시스템 -->
+                    <div class="project-card-carousel" data-index="0">
+                        <div class="project-image-container gradient-blue-purple">
+                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=300&fit=crop&crop=center" alt="업무 관리 시스템" class="project-image">
+                        </div>
+                        
+                        <div class="project-content">
+                            <div class="project-number">01</div>
+                            <h3>업무 관리 시스템</h3>
+                            <p>팀 협업을 위한 종합 업무 관리 플랫폼입니다. 프로젝트 추적, 일정 관리, 실시간 채팅 기능을 제공합니다.</p>
+                            <div class="project-actions">
+                                <button class="project-btn primary">
+                                    <span class="btn-text">Live Demo</span>
+                                    <span class="btn-arrow">→</span>
+                                </button>
+                                <button class="project-btn secondary">
+                                    <span class="btn-text">GitHub</span>
+                                    <span class="btn-icon">🔗</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 2: 반응형 웹 애플리케이션 -->
+                    <div class="project-card-carousel active" data-index="1">
+                        <div class="project-image-container gradient-green-blue">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop&crop=center" alt="반응형 웹 애플리케이션" class="project-image">
+                        </div>
+                        
+                        <div class="project-content">
+                            <div class="project-number">02</div>
+                            <h3>반응형 웹 애플리케이션</h3>
+                            <p>최신 웹 기술을 활용한 반응형 웹 애플리케이션입니다. PWA 기능과 오프라인 지원을 포함합니다.</p>
+                            <div class="project-actions">
+                                <button class="project-btn primary">
+                                    <span class="btn-text">Live Demo</span>
+                                    <span class="btn-arrow">→</span>
+                                </button>
+                                <button class="project-btn secondary">
+                                    <span class="btn-text">GitHub</span>
+                                    <span class="btn-icon">🔗</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 프로젝트 3: 모바일 앱 인터페이스 -->
+                    <div class="project-card-carousel" data-index="2">
+                        <div class="project-image-container gradient-purple-pink">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop&crop=center" alt="모바일 앱 인터페이스" class="project-image">
+                        </div>
+                        
+                        <div class="project-content">
+                            <div class="project-number">03</div>
+                            <h3>모바일 앱 인터페이스</h3>
+                            <p>직관적이고 사용자 친화적인 모바일 앱 인터페이스 디자인입니다. 다크 모드와 접근성을 고려했습니다.</p>
+                            <div class="project-actions">
+                                <button class="project-btn primary">
+                                    <span class="btn-text">Live Demo</span>
+                                    <span class="btn-arrow">→</span>
+                                </button>
+                                <button class="project-btn secondary">
+                                    <span class="btn-text">GitHub</span>
+                                    <span class="btn-icon">🔗</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 5: Contact -->
+    <section id="contact" class="contact-section">
+        <!-- 하늘색 배경 패턴 -->
+        <div class="contact-bg-pattern">
+            <div class="contact-bg-circle contact-bg-circle-1"></div>
+            <div class="contact-bg-circle contact-bg-circle-2"></div>
+            <div class="contact-bg-circle contact-bg-circle-3"></div>
+            <div class="contact-cloud-effect"></div>
+        </div>
+        
+        <div class="contact-container">
+            <!-- 메인 타이틀 -->
+            <div class="contact-title-section">
+                <div class="contact-title-decoration"> 
+                    <h2 class="contact-main-title">Contact</h2>
+                    <div class="contact-title-line contact-title-line-right"></div>
+                </div> 
+            </div>
+            
+            <!-- 연락처 정보들 -->
+            <div class="contact-info-container">
+                
+                <!-- 전화번호 - 왼쪽 정렬 -->
+                <div class="contact-info-item contact-phone">
+                    <div class="contact-info-bg-effect"></div>
+                    <div class="contact-icon-container">
+                        <div class="contact-icon contact-icon-phone">
+                            <span class="contact-icon-emoji">📱</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-content">
+                        <p class="contact-info-label">Phone</p>
+                        <p class="contact-info-value">010-1234-5678</p>
+                    </div>
+                    <div class="contact-info-indicator"></div>
+                </div>
+                
+                <!-- 이메일 - 중앙 정렬 -->
+                <div class="contact-info-item contact-email">
+                    <div class="contact-info-bg-effect contact-info-bg-effect-dark"></div>
+                    <div class="contact-icon-container contact-icon-right">
+                        <div class="contact-icon contact-icon-email">
+                            <span class="contact-icon-emoji">✉️</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-content contact-info-content-right">
+                        <p class="contact-info-label contact-info-label-dark">Email</p>
+                        <a href="mailto:songyi.dev@example.com" class="contact-info-value contact-info-value-link">songyi.dev@example.com</a>
+                    </div>
+                    <div class="contact-info-indicator contact-info-indicator-dark"></div>
+                </div>
+                
+                <!-- GitHub - 오른쪽 정렬 -->
+                <div class="contact-info-item contact-github">
+                    <div class="contact-info-bg-effect contact-info-bg-effect-cyan"></div>
+                    <div class="contact-icon-container contact-icon-right">
+                        <div class="contact-icon contact-icon-github">
+                            <span class="contact-icon-emoji">🐙</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-content contact-info-content-right">
+                        <p class="contact-info-label contact-info-label-cyan">GitHub</p>
+                        <a href="https://github.com/songyi-dev" target="_blank" rel="noopener" class="contact-info-value contact-info-value-link">github.com/songyi-dev</a>
+                    </div>
+                    <div class="contact-info-indicator contact-info-indicator-cyan"></div>
+                </div>
+            </div>
+    
+            
+            <!-- 하늘색 떠다니는 장식 요소들 -->
+            <div class="contact-decoration contact-decoration-1"></div>
+            <div class="contact-decoration contact-decoration-2"></div>
+            <div class="contact-decoration contact-decoration-3"></div>
+            <div class="contact-decoration contact-decoration-4"></div>
+            <div class="contact-decoration contact-decoration-5"></div>
+        </div>
+    </section>
+ 
+</body>
+</html>
+</html>

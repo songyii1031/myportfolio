@@ -1,0 +1,278 @@
+/* Responsive CSS */
+
+/* About Section - Mobile */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .main-content {
+        padding-left: 0;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .button-group {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .description p {
+        text-align: justify;
+    }
+
+    /* Section5 */
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .about-contact > * {
+        font-size: 0.8rem;
+    }
+}
+
+/* Navigation - Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    #about h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Skills Section - Mobile */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}
+
+/* Projects Carousel - Responsive */
+@media (max-width: 768px) {
+    .projects-carousel-container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .projects-carousel {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem 0;
+        overflow-x: visible;
+        overflow-y: visible;
+        scroll-snap-type: none;
+        height: auto;
+    }
+    
+    .project-card-carousel {
+        position: static !important;
+        width: 100% !important;
+        max-width: 100%;
+        height: auto !important;
+        opacity: 1 !important;
+        transform: none !important;
+        margin: 0 auto;
+        flex: none !important;
+        scroll-snap-align: none;
+    }
+    
+    .project-card-carousel.active {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto !important;
+        transform: none !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+    
+    .project-image-container {
+        height: 250px;
+        border-radius: 1rem 1rem 0 0;
+    }
+    
+    .project-image {
+        border-radius: 1rem 1rem 0 0;
+    }
+    
+    .project-content {
+        padding: 1.5rem !important;
+    }
+    
+    .project-content h3 {
+        font-size: 1.5rem !important;
+        margin-bottom: 0.75rem;
+    }
+    
+    .project-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+    
+    .project-actions {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .project-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.75rem 1.5rem;
+    }
+    
+    /* 양옆 화살표 숨김 */
+    .carousel-arrow {
+        display: none;
+    }
+    
+    .carousel-navigation {
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    
+    .carousel-btn {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.25rem;
+    }
+    
+    .dot {
+        width: 0.625rem;
+        height: 0.625rem;
+    }
+    
+    /* 양옆 화살표 숨김 */
+    .carousel-arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card-carousel {
+        max-width: 300px;
+    }
+    
+    .project-image-container {
+        height: 150px;
+    }
+    
+    .project-emoji {
+        font-size: 2rem !important;
+    }
+    
+    .project-content {
+        padding: 1rem !important;
+    }
+    
+    .project-content h3 {
+        font-size: 1.25rem !important;
+    }
+    
+    .project-content p {
+        font-size: 0.875rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .project-tech-stack {
+        gap: 0.25rem;
+    }
+    
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.125rem 0.5rem;
+    }
+    
+    .carousel-btn {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    
+    .dot {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+}
+
+/* General Mobile Optimizations */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .about-container {
+        padding: 0 1rem;
+    }
+    
+    .main-title {
+        font-size: 1.8rem;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-resume, .btn-projects {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .profile-card {
+        max-width: 280px;
+    }
+    
+    .avatar img {
+        width: 60%;
+    }
+}
+
+/* Tablet Optimizations */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about-container {
+        gap: 3rem;
+    }
+    
+    .main-content {
+        padding-left: 1rem;
+    }
+    
+    .main-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Large Desktop Optimizations */
+@media (min-width: 1200px) {
+    .about-container {
+        max-width: 1400px;
+    }
+    
+    .main-title {
+        font-size: 3.5rem;
+    }
+    
+    
+    .profile-card {
+        max-width: 400px;
+    }
+}
+
+
+/* Mobile scroll snap adjustments */
+@media (max-width: 768px) {
+    body {
+        scroll-snap-type: none; /* 모바일에서는 스크롤 스냅 완전 비활성화 */
+        overflow-y: auto; /* 일반 스크롤 허용 */
+    }
+    
+    section {
+        scroll-snap-align: none; /* 스크롤 스냅 정렬 비활성화 */
+        scroll-snap-stop: normal; /* 모바일에서는 연속 스크롤 허용 */
+    }
+}
