@@ -340,27 +340,7 @@
 
         // 초기 위치 (현재 active 배치)
         centerCard(currentIndex, /* smooth= */ false);
-
-        // 프로젝트 버튼 클릭 효과/동작 (그대로 유지)
-        const projectBtns = document.querySelectorAll('.project-btn');
-        projectBtns.forEach(btn => {
-            btn.addEventListener('click', function (e) {
-                e.preventDefault();
-                e.stopPropagation();
-
-                this.style.transform = 'scale(0.95)';
-                setTimeout(() => { this.style.transform = 'scale(1)'; }, 150);
-
-                const btnTextEl = this.querySelector('.btn-text');
-                const btnText = btnTextEl ? btnTextEl.textContent.trim() : '';
-
-                if (btnText === 'Live Demo') {
-                    alert('데모 페이지로 이동합니다!');
-                } else if (btnText === 'GitHub') {
-                    alert('GitHub 저장소로 이동합니다!');
-                }
-            });
-        });
+ 
 
         // 반응형: 리사이즈 시에도 중앙 유지
         window.addEventListener('resize', () => centerCard(currentIndex, false));

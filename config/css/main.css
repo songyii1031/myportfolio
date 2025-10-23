@@ -554,7 +554,7 @@ section:not(#about) {
 }
 
 .projects-carousel {
-    height: 640px;        
+    height: 740px;        
     display: flex;
     gap: 20px;                   /* 카드 간격 */
     overflow-x: auto;            /* 가로 스크롤 */
@@ -575,8 +575,8 @@ section:not(#about) {
     flex: 0 0 auto;              /* 줄바꿈 없이 가로로 */
     scroll-snap-align: center;
     transition: transform .3s, box-shadow .3s, opacity .3s;
-    width: 320px;
-    height: 480px;
+    width: 420px;
+    height: 550px;
     opacity: .7;
     transform: scale(.94);       /* 기본은 살짝 축소 */
 }
@@ -654,19 +654,6 @@ section:not(#about) {
     flex-direction: column;
     justify-content: space-between;
 }
- 
-.project-number {
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: #94a3b8;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-}
-
-.project-card-carousel.active .project-number {
-    font-size: 0.875rem;
-}
 
 .project-content h3 {
     font-size: 1.25rem;
@@ -687,6 +674,7 @@ section:not(#about) {
     margin-bottom: 1.5rem;
     flex: 1;
     font-size: 0.875rem;
+    text-align: justify;
 }
 
  
